@@ -1,0 +1,27 @@
+.lose {
+    animation: 1s 2 alternate Lose;
+}
+
+.win {
+    animation: 1s Win;
+}
+
+@keyframes Lose {
+    from {
+        transform: scaleY(100%);
+        opacity: 100%;
+    }
+    to {
+        transform: scaleY(50%);
+        opacity: 20%;
+    }
+}
+
+@keyframes Win {
+    from {
+        transform: rotate3d(0, 0, 0, 0);
+    }
+    to {
+        transform: rotate3d(0, 1, 0, 1turn);
+    }
+}
